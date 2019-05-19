@@ -11,7 +11,7 @@ const publicDir = path.join(__dirname, "/public");
 module.exports = merge(common, {
   mode: "development",
   devServer: {
-    port: "8081",
+    port: "8080",
     historyApiFallback: true,
     contentBase: publicDir
   },
