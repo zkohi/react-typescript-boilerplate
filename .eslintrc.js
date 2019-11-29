@@ -4,6 +4,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
+    "plugin:react/recommended",
     "plugin:import/typescript"
   ],
   env: {
@@ -14,7 +15,7 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module"
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "react-hooks"],
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
@@ -62,7 +63,7 @@ module.exports = {
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/type-annotation-spacing": "off",
     "@typescript-eslint/unified-signatures": "error",
-    "arrow-body-style": "error",
+    "arrow-body-style": "off",
     "arrow-parens": ["off", "as-needed"],
     camelcase: "error",
     "capitalized-comments": "error",
@@ -87,7 +88,7 @@ module.exports = {
       "undefined"
     ],
     "id-match": "error",
-    "import/no-extraneous-dependencies": "error",
+    "import/no-extraneous-dependencies": "off",
     "import/order": "off",
     "linebreak-style": "off",
     "max-classes-per-file": "off",
@@ -123,7 +124,7 @@ module.exports = {
     "no-var": "error",
     "object-shorthand": "error",
     "one-var": ["error", "never"],
-    "prefer-arrow/prefer-arrow-functions": "error",
+    "prefer-arrow/prefer-arrow-functions": "off",
     "prefer-const": "error",
     "quote-props": "off",
     radix: "error",
